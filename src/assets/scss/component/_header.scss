@@ -1,0 +1,127 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__logo {
+        img {
+            max-width: 90px;
+            width: 100%;
+        }
+    }
+
+    .header__menu {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-size: 16px;
+            position: relative;
+            text-transform: capitalize;
+            margin-right: 10px;
+
+            .username {
+                min-width: fit-content;
+            }
+
+            button {
+                width: 100%;
+                background-color: var(--blue-color);
+                color: white;
+                padding: 5px 10px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                box-shadow: none;
+                cursor: pointer;
+            }
+        }
+
+        .btn-sign-in {
+            color: white;
+        }
+
+        .wishlist{
+            .btn-wishlist{
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+                border: 1px solid white;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                border-radius: 50%;
+
+                &:hover{
+                    background-color: white;
+                    color: var(--primary-color);
+                }
+
+                .count{
+                    position: absolute;
+                    top: -7px;
+                    right: -7px;
+                    background-color: rgb(241, 0, 0);
+                    font-size: 10px;
+                    border-radius: 50%;
+                    min-width: 20px;
+                    text-align: center;
+                    display: block;
+                    padding: 4px;
+                    color: white !important;
+                }
+            }
+        }
+
+        .cart{
+            .btn-cart{
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+                border: 1px solid white;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                position: relative;
+
+                &:hover{
+                    background-color: white;
+                    color: var(--primary-color);
+                }
+
+                .count{
+                    position: absolute;
+                    top: -7px;
+                    right: -7px;
+                    background-color: green;
+                    font-size: 10px;
+                    border-radius: 50%;
+                    min-width: 20px;
+                    text-align: center;
+                    display: block;
+                    padding: 4px;
+                    color: white !important;
+                }
+            }
+        }
+    }
+}

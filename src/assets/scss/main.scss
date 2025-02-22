@@ -1,0 +1,12 @@
+// Common Styles
+@import 'common';
+
+// Layout Styles
+@import './layout/main-layout';
+
+// Components Styles
+@import './component/header';
+
+// Pages Styles
+@import './view/login/login';
+@import './view/dashboard/dashboard';
